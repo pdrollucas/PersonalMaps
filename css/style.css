@@ -13,7 +13,7 @@ main{
 
 .tabuleiro{
     border: 1px solid black;
-    width: 80vw;
+    width: 60vw;
     height: 80vh;
 }
 
@@ -44,10 +44,40 @@ main{
 }
 
 .box{
-    border: 1px solid red;
-    width: 20vw;
+    border: 1px solid black;
+    width: 10vw;
     height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+}
+
+.texto{
+    border: 1px solid lightgray;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    margin: 10px 0;
+}
+
+.dado{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.dado-titulo{
+    margin-bottom: 1rem;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 16px;
 }
