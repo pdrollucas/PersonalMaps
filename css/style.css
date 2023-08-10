@@ -14,7 +14,7 @@ main{
 .tabuleiro{
     border: 1px solid black;
     width: 60vw;
-    height: 80vh;
+    height: 90vh;
 }
 
 .coluna-1{
@@ -40,17 +40,17 @@ main{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-top: -20vh;
+    margin-top: -30vh;
 }
 
 .box{
     border: 1px solid black;
-    width: 10vw;
-    height: 20vh;
+    width: 15vw;
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
     padding: 16px;
 }
 
@@ -60,16 +60,40 @@ main{
     border-radius: 4px;
     background-color: aquamarine;
     margin: 10px 0;
+    text-align: center;
 }
 
-.dado{
+.area-bonecos{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.area-bonecos img{
+    width: 70px;
+    height: 70px;
+}
+
+.container-soltar{
+    width: 75px;
+    height: 75px;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+/* pra interação com a imagem */
+.hover{
+    border: 1px solid black;
+}
+
+
+.dado{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
 }
 
 .dado-titulo{
