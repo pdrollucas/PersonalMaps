@@ -6,13 +6,15 @@
 
 main{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+    gap: 5vw;
+    padding: 2rem;
 }
 
 .tabuleiro{
-    width: 75vw;
+    width: 60vw;
     height: 90vh;
     border: 1px solid black;
 }
@@ -44,7 +46,7 @@ main{
 }
 
 .box{
-    width: 15vw;
+    width: 10vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -61,7 +63,7 @@ main{
     margin: 10px 0;
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .area-bonecos{
@@ -72,25 +74,33 @@ main{
 }
 
 .area-bonecos img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
+}
+
+.secao-instrucoes{
+    width: 20vw;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .casa-bonecos{
     border: 1px solid black;
     border-radius: 8px;
-    padding: 16px 24px;
+    padding: 8px;
+    height: 20vh;
+    width: 20vw;
 }
 
 .casa-bonecos div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    display: flex;
 }
 
 .casa-bonecos img{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
 
 .casa-bonecos h2{
@@ -99,8 +109,8 @@ main{
 }
 
 .container-soltar{
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border: 1px solid green;
     border-radius: 4px;
 }
@@ -117,7 +127,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 35vh;
+    margin-left: 30vh;
 }
 
 .dado-titulo{

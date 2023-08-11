@@ -1,0 +1,24 @@
+.conteudo-carta{
+    height: 60vh;
+    border: 3px solid black;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: gray;
+    display: grid;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.conteudo-carta img{
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.conteudo-carta p{
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: justify;
+    background-color: lightgray;
+}
