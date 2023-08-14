@@ -52,18 +52,22 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items:center;
-    padding: 16px;
+    /*padding: 16px;*/
+    padding: 1rem;
     border: 1px solid black;
 }
 
 .texto{
-    padding: 8px 16px;
+    /*padding: 8px 16px;*/
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     background-color: aquamarine;
-    margin: 10px 0;
+    /*margin: 10px 0;*/
+    margin: 0.75rem 0;
     text-align: center;
     font-weight: bold;
-    font-size: 1.25rem;
+    /*font-size: 1.25rem;*/
+    font-size: 1.25vw;
 }
 
 .area-bonecos{
@@ -74,8 +78,11 @@ main{
 }
 
 .area-bonecos img{
+    /*
     width: 60px;
-    height: 60px;
+    height: 60px;*/
+    width: 3vw;
+    height: 5vh;
 }
 
 .secao-instrucoes{
@@ -89,30 +96,42 @@ main{
 .casa-bonecos{
     border: 1px solid black;
     border-radius: 8px;
-    padding: 8px;
+    /*padding: 8px;*/
+    padding: 0.5rem;
     height: 20vh;
     width: 20vw;
 }
 
 .casa-bonecos div{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .casa-bonecos img{
+    /*
     width: 60px;
-    height: 60px;
+    height: 60px;*/
+    width: 3vw;
+    height: 6vh;
 }
 
 .casa-bonecos h2{
     margin-bottom: 16px;
     text-align: center;
+    font-size: 1.5vw;
 }
 
 .container-soltar{
-    width: 65px;
-    height: 65px;
+    /*width: 65px;
+    height: 65px;*/
+    width: 4vw;
+    height: 6vh;
     border: 1px solid green;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* pra interação com a imagem */
@@ -132,10 +151,17 @@ main{
 
 .dado-titulo{
     margin-bottom: 1rem;
+    /*font-size: 1.25rem;*/
+    font-size: 1.25vw;
 }
 
 .btn{
     border: 1px solid black;
     border-radius: 16px;
-    padding: 16px;
+    /*padding: 16px;*/
+    padding: 1rem;
+}
+
+.dado-img{
+    width: 7vw;
 }
