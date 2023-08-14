@@ -17,6 +17,7 @@
     max-height: 20vh;
     border: 1px solid black;
     border-radius: 8px;
+    background-color: white;
 }
 
 .carta-texto{
@@ -27,6 +28,56 @@
     text-align: justify;
     background-color: lightgray;
     font-size: 1.8vh;
+}
+
+.carta-instrucoes{
+    display: grid;
+}
+
+.carta{
+    display: none;
+}
+.carta-1{
+    display: none;
+}
+.carta-2{
+    display: none;
+}
+.carta-3{
+    display: none;
+}
+.carta-4{
+    display: none;
+}
+.carta-5{
+    display: none;
+}
+.carta-6{
+    display: none;
+}
+.carta-7{
+    display: none;
+}
+.carta-8{
+    display: none;
+}
+.carta-9{
+    display: none;
+}
+.carta-10{
+    display: none;
+}
+.carta-11{
+    display: none;
+}
+.carta-12{
+    display: none;
+}
+.carta-13{
+    display: none;
+}
+.carta-14{
+    display: none;
 }
 
 @media screen and (max-width: 1440px){
