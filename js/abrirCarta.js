@@ -1,3 +1,4 @@
+//Abrir clicando no título
 const cartas = document.querySelectorAll(".carta");
 const cartaInstrucao = document.querySelector(".carta-instrucoes")
 
@@ -25,4 +26,27 @@ for (let i = 1; i <= cartas.length; i++) {
             }
         });
     });
+}
+
+//Abrir colocando no box
+const containers = document.querySelectorAll(".container-soltar")
+
+containers.forEach((container) => {
+    container.addEventListener('drop', dropImage)
+})
+
+function dropImage(e){
+    e.preventDefault();
+    e.target.append(beingDragged)
+    abrirCarta(e.target)
+}
+
+function abrirCarta(container){
+    const cartaNumero = container.getAttribute('data-container');
+    const cartaExibida = document.querySelector(`.carta-${cartaNumero}`);
+    if (cartaExibida) {
+        esconderCartasExceto(cartaExibida);
+        cartaExibida.style.display = "grid";
+        cartaInstrucao.style.display = "none";
+    }
 }
