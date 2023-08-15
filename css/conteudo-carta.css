@@ -34,6 +34,27 @@
     display: grid;
 }
 
+.carta-btn-fechar{
+    border: 1px solid black;
+    background-color: lightcoral;
+    color: white;
+    display: flex;
+    position: absolute;
+    justify-self: flex-end;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.carta-btn-fechar:hover{
+    background-color: red;
+}
+
+.carta-btn-fechar:active{
+    background-color: lightcoral;
+    color: white;
+}
+
 .carta{
     display: none;
 }

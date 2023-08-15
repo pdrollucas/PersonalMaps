@@ -57,6 +57,15 @@ main{
     border: 1px solid black;
 }
 
+.box button:hover{
+    background-color: rgb(184, 248, 227);
+    transition: 0.3s;
+}
+
+.box button:active{
+    background-color: aquamarine;
+}
+
 .texto{
     /*padding: 8px 16px;*/
     padding: 0.5rem 1rem;
