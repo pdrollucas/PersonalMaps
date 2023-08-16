@@ -1,3 +1,5 @@
+/*  Girar dado ao clicá-lo  */ 
+
 const botao = document.getElementById("btn")
 
 botao.addEventListener("click", (e) => {
@@ -26,4 +28,12 @@ botao.addEventListener("click", (e) => {
             break
     }
 });
+
+/* Girar dado ao clicar a tecla "D" */
+
+document.addEventListener('keydown', function(e){
+    if(e.key === 'D' || e.key === "d"){
+        botao.click()
+    }
+})
 
