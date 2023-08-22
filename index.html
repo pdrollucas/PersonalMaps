@@ -6,14 +6,48 @@
     <title>Jogo - Francine</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/conteudo-carta.css">
+    <link rel="stylesheet" href="./css/cadastro-personagens.css">
 </head>
 <body>
     <header>
-
+        <div class="container-cadastro">
+            <div class="container-cadastro_titulos">
+                <h2>Bem vindo ao</h2>
+                <h2>Personal Maps</h2>
+            </div>
+            <h3>Número de jogadores: </h3>
+            <input type="number" id="numeroDeJogadores" class="container-cadastro_input">
+            <button id="btn-proximaEtapa" class="container-cadastro_button">Próxima etapa</button>
+        </div>
+        <div class="container-cadastro-2">
+            <button id="btn-voltar">Voltar</button>
+            <div class="container-cadastro_titulos">
+                <h2>Personal Maps</h2>
+            </div>
+            <h3>Nome do jogador: </h3>
+            <input type="text" id="nomeDoJogador" class="container-cadastro_input">
+            <label><h3>Personagem:</h3></label>
+            <select id="opcoes">
+                <option>Gato</option>
+                <option>Koala</option>
+                <option>Urso</option>
+                <option>Dinossauro</option>
+                <option>Passáro</option>
+                <option>Peixe</option>
+                <option>Camaleão</option>
+                <option>Capivara</option>
+                <option>Pinguim</option>
+                <option>Girafa</option>
+                <option>Coruja</option>
+                <option>Morcego</option>
+            </select>
+            <button class="container-cadastro_button" id="proxJogador">Próximo jogador</button>
+            <button class="container-cadastro_button" id="comecar">Começar</button>
+        </div>
     </header>
-    <main>
+    <main class="main-opaco">
         <div class="dado">
-            <h3 class="dado-titulo">Aperte a tecla "D" ou clique no dado para girá-lo</h3>
+            <h3 class="dado-titulo">Aperte a tecla "D" para girar o dado</h3>
             <button id="btn" class="btn">
                 <img src="./imagens/face1.png" alt="" class="dado-img" id="face">
             </button>
@@ -315,5 +349,6 @@
     <script src="./js/movimentaDado.js"></script>
     <script src="./js/movimentaBoneco.js"></script>
     <script src="./js/abrirCarta.js"></script>
+    <script src="./js/cadastrarJogadores.js"></script>
 </body>
 </html>
