@@ -43,12 +43,25 @@ btnProxJogador.addEventListener("click", () => {
     document.getElementById("opcoes").selectedIndex = 0;
     document.getElementById("nomeDoJogador").focus();
     if (i >= numJog) {
-        alert("Todos os jogadores cadastrados!")
-        /*document.getElementById("btn-proximaEtapa").disabled = true;
-        document.getElementById("btn-voltar").disabled = true;
-        document.getElementById("nomeDoJogador").disabled = true;
-        document.getElementById("opcoes").disabled = true;
-        document.getElementById("btn-comecar").disabled = false;*/
+       //alert("Todos os jogadores cadastrados!")
+       toastr["success"]("Clique em começar", "Todos os jogadores cadastrados!")
+        toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-center",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "8000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+        }
     }
 })
 
@@ -63,10 +76,48 @@ btnComecar.addEventListener("click", () => {
     document.addEventListener('keydown', function (e){
         if (i < numJog) {
             if(e.key === 'D' || e.key === 'd'){
-                alert(`Vez de ${nomes[i]} - ${personagens[i]}`);
+                //alert(`Vez de ${nomes[i]} - ${personagens[i]}`);
+                toastr["info"](`Personagem: ${personagens[i]} `, `Vez de ${nomes[i]}`)
+
+                toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-center",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "400",
+                "hideDuration": "1000",
+                "timeOut": "8000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+                }
                 i = (i + 1) % numJog;
             } else {
-                alert("Tecla não identifacada")
+                //alert("Tecla não identifacada")
+                toastr["error"]("Para girar o dado aperte a tecla D", "Tecla não identificada")
+
+                toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-center",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+                }
             }
         } else {
             alert("Fechou o jogo");
